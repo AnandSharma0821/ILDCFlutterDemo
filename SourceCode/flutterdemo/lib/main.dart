@@ -182,6 +182,7 @@ FractionallySizedBox generateThirdRow(BuildContext context) {
 FractionallySizedBox generateFourthRow(BuildContext context) {
   double screenWidth = MediaQuery.of(context).size.width;
   double screenHeight = MediaQuery.of(context).size.height;
+
   return FractionallySizedBox(
     widthFactor: 0.9,
     child: Container(
@@ -196,7 +197,7 @@ FractionallySizedBox generateFourthRow(BuildContext context) {
             child: Text(
               'Fourth',
               style: TextStyle(
-                  fontSize: 26,
+                  fontSize: (screenHeight * 0.028),
                   color: Colors.black,
                   decoration: TextDecoration.none),
               maxLines: 1,
@@ -207,7 +208,7 @@ FractionallySizedBox generateFourthRow(BuildContext context) {
             child: Text(
               'Fourth',
               style: TextStyle(
-                  fontSize: 12,
+                  fontSize: (screenHeight * 0.015),
                   color: Colors.black,
                   decoration: TextDecoration.none),
               maxLines: 1,
@@ -222,7 +223,7 @@ FractionallySizedBox generateFourthRow(BuildContext context) {
             child: Text(
               'Fourth',
               style: TextStyle(
-                  fontSize: 26,
+                  fontSize: (screenHeight * 0.028),
                   color: Colors.black,
                   decoration: TextDecoration.none),
               maxLines: 1,
@@ -248,6 +249,8 @@ FractionallySizedBox generateFifthRow(BuildContext context) {
 
 // generateSixthRow: Call this method to generate sixth row
 FractionallySizedBox generateSixthRow(BuildContext context) {
+  double screenHeight = MediaQuery.of(context).size.height;
+  var isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
   return FractionallySizedBox(
     widthFactor: 0.9,
     child: Row(
@@ -259,7 +262,7 @@ FractionallySizedBox generateSixthRow(BuildContext context) {
         Text(
           'Fifth',
           style: TextStyle(
-              fontSize: 26,
+              fontSize: (screenHeight * 0.028),
               color: Colors.black,
               decoration: TextDecoration.none),
           maxLines: 1,
@@ -273,6 +276,7 @@ FractionallySizedBox generateSixthRow(BuildContext context) {
 FractionallySizedBox generateSeventhRow(BuildContext context) {
   double screenWidth = MediaQuery.of(context).size.width;
   double screenHeight = MediaQuery.of(context).size.height;
+  var isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
   return FractionallySizedBox(
     widthFactor: 0.9,
     child: Container(
@@ -286,7 +290,7 @@ FractionallySizedBox generateSeventhRow(BuildContext context) {
             child: Text(
               'Sixth',
               style: TextStyle(
-                  fontSize: 12,
+                  fontSize: (screenHeight * 0.015),
                   color: Colors.black,
                   decoration: TextDecoration.none),
               maxLines: 1,
@@ -297,7 +301,7 @@ FractionallySizedBox generateSeventhRow(BuildContext context) {
             child: Text(
               'Sixth',
               style: TextStyle(
-                  fontSize: 26,
+                  fontSize: (screenHeight * 0.028),
                   color: Colors.black,
                   decoration: TextDecoration.none),
               maxLines: 1,
@@ -312,7 +316,7 @@ FractionallySizedBox generateSeventhRow(BuildContext context) {
             child: Text(
               '',
               style: TextStyle(
-                  fontSize: 26,
+                  fontSize: (screenHeight * 0.028),
                   color: Colors.black,
                   decoration: TextDecoration.none),
               maxLines: 1,
@@ -329,6 +333,7 @@ FractionallySizedBox generateSeventhRow(BuildContext context) {
 FractionallySizedBox generateEigthRow(BuildContext context) {
   double screenWidth = MediaQuery.of(context).size.width;
   double screenHeight = MediaQuery.of(context).size.height;
+  var isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
   return FractionallySizedBox(
     widthFactor: 1,
     child: Container(
@@ -342,7 +347,7 @@ FractionallySizedBox generateEigthRow(BuildContext context) {
             child: Text(
               '',
               style: TextStyle(
-                  fontSize: 12,
+                  fontSize: (screenHeight * 0.015),
                   color: Colors.black,
                   decoration: TextDecoration.none),
               maxLines: 1,
@@ -353,7 +358,7 @@ FractionallySizedBox generateEigthRow(BuildContext context) {
             child: Text(
               'Seventh',
               style: TextStyle(
-                  fontSize: 12,
+                  fontSize: (screenHeight * 0.015),
                   color: Colors.black,
                   decoration: TextDecoration.none),
               maxLines: 1,
@@ -368,7 +373,7 @@ FractionallySizedBox generateEigthRow(BuildContext context) {
             child: Text(
               'Seventh',
               style: TextStyle(
-                  fontSize: 26,
+                  fontSize: (screenHeight * 0.028),
                   color: Colors.black,
                   decoration: TextDecoration.none),
               maxLines: 1,
@@ -386,6 +391,7 @@ FractionallySizedBox generateEigthRow(BuildContext context) {
 FractionallySizedBox generateNinthRow(BuildContext context) {
   double screenWidth = MediaQuery.of(context).size.width;
   double screenHeight = MediaQuery.of(context).size.height;
+  var isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
   return FractionallySizedBox(
     widthFactor: 1,
     child: Container(
@@ -399,7 +405,7 @@ FractionallySizedBox generateNinthRow(BuildContext context) {
             child: Text(
               '',
               style: TextStyle(
-                  fontSize: 12,
+                  fontSize: (screenHeight * 0.015),
                   color: Colors.black,
                   decoration: TextDecoration.none),
               maxLines: 1,
@@ -410,7 +416,7 @@ FractionallySizedBox generateNinthRow(BuildContext context) {
             child: Text(
               '',
               style: TextStyle(
-                  fontSize: 12,
+                  fontSize: (screenHeight * 0.015),
                   color: Colors.black,
                   decoration: TextDecoration.none),
               maxLines: 1,
@@ -425,7 +431,7 @@ FractionallySizedBox generateNinthRow(BuildContext context) {
             child: Text(
               'Eight',
               style: TextStyle(
-                  fontSize: 12,
+                  fontSize: (screenHeight * 0.015),
                   color: Colors.black,
                   decoration: TextDecoration.none),
                   textDirection: TextDirection.rtl,
