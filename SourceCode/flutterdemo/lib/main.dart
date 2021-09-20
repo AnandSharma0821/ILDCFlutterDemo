@@ -250,7 +250,6 @@ FractionallySizedBox generateFifthRow(BuildContext context) {
 // generateSixthRow: Call this method to generate sixth row
 FractionallySizedBox generateSixthRow(BuildContext context) {
   double screenHeight = MediaQuery.of(context).size.height;
-  var isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
   return FractionallySizedBox(
     widthFactor: 0.9,
     child: Row(
@@ -276,7 +275,6 @@ FractionallySizedBox generateSixthRow(BuildContext context) {
 FractionallySizedBox generateSeventhRow(BuildContext context) {
   double screenWidth = MediaQuery.of(context).size.width;
   double screenHeight = MediaQuery.of(context).size.height;
-  var isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
   return FractionallySizedBox(
     widthFactor: 0.9,
     child: Container(
@@ -333,7 +331,6 @@ FractionallySizedBox generateSeventhRow(BuildContext context) {
 FractionallySizedBox generateEigthRow(BuildContext context) {
   double screenWidth = MediaQuery.of(context).size.width;
   double screenHeight = MediaQuery.of(context).size.height;
-  var isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
   return FractionallySizedBox(
     widthFactor: 1,
     child: Container(
@@ -391,7 +388,6 @@ FractionallySizedBox generateEigthRow(BuildContext context) {
 FractionallySizedBox generateNinthRow(BuildContext context) {
   double screenWidth = MediaQuery.of(context).size.width;
   double screenHeight = MediaQuery.of(context).size.height;
-  var isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
   return FractionallySizedBox(
     widthFactor: 1,
     child: Container(
