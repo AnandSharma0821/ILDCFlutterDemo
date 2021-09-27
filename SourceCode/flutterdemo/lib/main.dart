@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         canvasColor: Colors.blue[100],
       ),
-      home: Assignment9(),
+      home: Assignment8(),
       debugShowCheckedModeBanner: false,
     );
   }
