@@ -62,13 +62,6 @@ class _Assignment9State extends State<Assignment9> {
                     child: 
                     Center(child: Text('Screen 2')))),
           ),
-          // performQuestion2(context), // Question 2
-          SizedBox(height: 20),
-          // performQuestion3(context), // Question 3
-          SizedBox(height: 20),
-          // performQuestion4(context), // Question 4
-          SizedBox(height: 20),
-          // performQuestion5(context), // Question 5
         ],
       )),
     );
